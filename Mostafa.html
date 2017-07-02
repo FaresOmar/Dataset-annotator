@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Image annotator </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="jquery-3.0.0.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+<h2><pre>Frame                                          Pose</pre></h2>
+<img src="#" alt="Frame" width="480" height="270" align="left">
+<section>
+<from id = "checkboxes" >
+  <div class="column">
+    <input type="checkbox" name="Crossed Arms" value="Bike"> Crossed Arms<br>
+    <input type="checkbox" name="Crossed Legs" value="Car" > Crossed Legs<br>
+    <input type="checkbox" name="Turning Back" value="Car" > Turning Back<br>
+    <input type="checkbox" name="Biting Nails" value="Car" > Biting Nails<br>
+    <input type="checkbox" name="Hands in Pockets" value="Car" > Hands in Pockets<br>
+    <input type="checkbox" name="Hands on Hips" value="Car" > Hands on Hips<br>
+    <input type="checkbox" name="Foot Against the Wall" value="Car" > Foot Against the Wall <br>
+    <input type="checkbox" name="Side Bending" value="Car" > Side Bending<br>
+    <input type="checkbox" name="Thinking Pose" value="Car" > Thinking Pose<br>
+  </div>
+  <input type="checkbox" name="Wrist Grab Pose" value="Car" > Wrist Grab Pose<br>
+  <input type="checkbox" name="Hand Behind Head" value="Car" > Hand Behind Head <br>
+  <input type="checkbox" name="Netural Pose" value="Car" > Netural Pose<br>
+</form>
+</section>
+<section id="buttons" style ="margin-top: 12em">
+<p>Frame number:<span id="imgIndex"> </span></p>
+<a id ="prev" href="#" >
+<img src="images/prev.png" alt="prev" height="50" width="50"></a>
+<a id ="a" href="" name="submit" style ="margin-left: 11em" download>Download</a>
+<a id ="next" href="#" style ="margin-left: 9em">
+<img src="images/next.png" alt="next" height="50" width="50"></a>
+</section>
+<section style ="margin-top: 2em">
+<input type="file" name="img" multiple>
+File name:<input type="text" name="fileName">
+</section>
+</body>
+</html>
